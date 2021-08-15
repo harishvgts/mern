@@ -1,0 +1,7 @@
+POST http://localhost:5000/add-to-diary
+Content_Type: application/json
+
+{
+    "title": "new",
+    "description": "new",
+}

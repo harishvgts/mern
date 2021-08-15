@@ -1,0 +1,22 @@
+.-form{
+    margin-top: -6rem;
+}
+.-form .btn{
+    align-self: center;
+    text-align: center;
+}
+.form{
+    text-align: left;
+    margin: auto;
+    max-width: 80vw;
+}
+.input.text{
+    width: 40vw;
+}
+
+.input.description{
+    width: 80vw;
+    max-width: 80vw;
+    height: 35vh;
+    max-height: 35vh;
+}
