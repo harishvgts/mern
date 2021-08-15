@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import UserContext from "../context/Context";
 import './nav.css'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useHistory } from 'react-router-dom'
 import axios from 'axios';
 
 const HeaderLink = ({ page, selected }) => {
@@ -24,25 +24,27 @@ const HeaderLink = ({ page, selected }) => {
     const [ logout, setLogout] = useState(false)
     const page = useParams().page || 'home';
     const [user, setUser] = useContext(UserContext)
-
+	const history = useHistory()
+    
 
     useEffect(()=>{
-      // if(userData) setLogout(true)
+       if(user) setLogout(true)
     })
     
     const onClick = () =>{
-      
+      setUser('')
+
+	history.push('/diary')
+	window.location.reload()
     }
 
     return (
-      <>
       <div className='nav'>
         <HeaderLink page='home' selected={page === 'home'} />
         <HeaderLink page='about' selected={page === 'about'} />
         <HeaderLink page='diary' selected={page === 'diary'} />
-        {/* { userData && <button className='delete-btn' onClick={onClick}>logout</button>} */}
+       	{ user && <button className='delete-btn' type='submit' onClick={onClick}>logout</button>} 
       </div>
-      </>
     );
   };
 
