@@ -10,7 +10,7 @@ const About = () => {
         <div style={style} className="about">
             <h2>About</h2>
             <p>A simple MERN Diary application which can register and login user useing jwt which 
-            is saved useing contextAPI, after logging in can create diary entry,edit and delete.<br/>
+            <br/>is saved useing contextAPI, after logging in can create diary entry,edit and delete.<br/>
             <br/><b>Tech used</b><br/>
             react : reacthooks(useState, useEffect, useContext),react-router and axios<br/>
             nodejs : Express, cors, middleware, router , cors, jwt, bcrypt<br/>
