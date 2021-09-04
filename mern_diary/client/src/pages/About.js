@@ -13,7 +13,7 @@ const About = () => {
             <br/>is saved useing contextAPI, after logging in can create diary entry,edit and delete.<br/>
             <br/><b>Tech used</b><br/>
             react : reacthooks(useState, useEffect, useContext),react-router and axios<br/>
-            nodejs : Express, cors, middleware, router , cors, jwt, bcrypt<br/>
+            nodejs : Express, cors, middleware, router, jwt, bcrypt<br/>
             mongoDB<br/>
             </p>
             <h2 className='text'>Routes</h2>
