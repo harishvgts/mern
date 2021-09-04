@@ -8,11 +8,11 @@ react : reacthooks(useState, useEffect, useContext),react-router and axios
 nodejs : Express, cors, middleware, router, jwt, bcrypt, mongoose, MongoDB
 
 <h2> Client Routes </h2>
-  /login             
-  /Register          
-  /home              
-  /about             
-  /diary             
-  /diary/add         
-  /diary/id         
-  /diary/edit/id    
+  <li>  /login            </li> 
+  <li>  /Register         </li> 
+  <li>  /home             </li> 
+  <li>  /about            </li> 
+  <li>  /diary            </li> 
+  <li>  /diary/add        </li> 
+  <li>  /diary/id         </li>
+  <li>  /diary/edit/id    </li>
