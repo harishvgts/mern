@@ -14,7 +14,7 @@ jobs:
                npm install
        - name: running a build file
          run: |
-               cd /home/ubuntu/actions-runner/_work/mern/mern/mern_diary/client            
+               cd /home/ubuntu/actions-runner/_work/mern/mern/mern_diary/client/build           
                 npm run build
        - name: nginx service
          run: |
