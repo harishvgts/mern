@@ -6,15 +6,15 @@ on:
 jobs:
    build:
       runs-on: python
-      steps:
-       - uses: actions/checkout@v2
-    
+      steps:    
        - name: installing dependencies
-          run: cd /mern_dairy/client
-               npm install
+          run: |
+                cd /mern_dairy/client
+                npm install
        - name: running a build file
-          run: cd /mern_dairy/client
-               npm run build
+          run: |
+                cd /mern_dairy/client
+                npm run build
        - name: nginx service
           run: |
                 service nginx restart
