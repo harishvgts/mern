@@ -18,7 +18,7 @@ jobs:
          id: yarn-cache
          with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: $ Linux-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: $ Linux-yarn- ${{ hashFiles('**/yarn.lock') }}
           restore-keys: $ Linux-yarn-
        - name: installing dependencies
          run: |
