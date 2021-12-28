@@ -6,7 +6,8 @@ on:
 jobs:
    build:
       runs-on: js
-      steps:    
+      steps: 
+       - uses: actions/checkout@v2
        - name: installing dependencies
          run: |
                 npm install
