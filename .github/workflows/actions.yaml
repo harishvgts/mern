@@ -8,10 +8,19 @@ jobs:
       runs-on: js
       steps: 
        - uses: actions/checkout@v2
+       - name: Cache node_modules
+         uses: actions/cache@v2
+         id: yarn-cache
+         with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+                          ${{runner.os }}-yarn-
        - name: installing dependencies
          run: |
                cd /home/ubuntu/actions-runner/_work/mern/mern/mern_diary/client
                npm install
+               
                
        - name: build dependencies
          run: |
