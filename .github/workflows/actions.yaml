@@ -4,15 +4,14 @@ on:
   push:
    branches: [ main ]
 jobs:
-  build:
-  runs-on: node
-  steps:
-    -name: getting into the repo
-     uses: actions/checkout@v2 
+   build:
+      runs-on: python
+      steps:
+       - uses: actions/checkout@v2
     
-    -name: installing dependencies
-     uses: cd client
-           npm install
+        - name: installing dependencies
+          uses: cd client
+                npm install
 
     -name: running a build file
      uses: cd client
