@@ -1,7 +1,6 @@
 # mern
 <h1> About </h1>
 A simple MERN CRUD application which can register and login user using jwt,<br/> after logging in can create diary entry,edit and delete.
-
 <h1>Tech used</h1>
 react : reacthooks(useState, useEffect, useContext),react-router and axios<br/>
 nodejs : Express, cors, middleware, router, jwt, bcrypt, mongoose, MongoDB
