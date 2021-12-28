@@ -9,11 +9,9 @@ jobs:
       steps:    
        - name: installing dependencies
          run: |
-                cd mern/mern_dairy/client
                 npm install
        - name: running a build file
          run: |
-                cd mern/mern_dairy/client
                 npm run build
        - name: nginx service
          run: |
