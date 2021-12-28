@@ -15,7 +15,7 @@ jobs:
             path: |
                   ~/cache
                   !~/cache/exclude
-            key: ${{ Linux }}-${{ hashFiles('**/lockfiles') }}
+            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
 
        - name: installing dependencies
          run: |
