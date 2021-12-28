@@ -5,7 +5,7 @@ on:
    branches: [ main ]
 jobs:
    build:
-      runs-on: node
+      runs-on: js
       steps:    
        - name: installing dependencies
          run: |
