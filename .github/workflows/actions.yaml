@@ -12,6 +12,12 @@ jobs:
          run: |
                cd /home/ubuntu/actions-runner/_work/mern/mern/mern_diary/client
                npm install
+               
+       - name: build dependencies
+         run: |
+               cd /home/ubuntu/actions-runner/_work/mern/mern/mern_diary/client
+               npm run build
+               
        - name: nginx service
          run: |
                 service nginx restart
