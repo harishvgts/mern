@@ -18,8 +18,8 @@ jobs:
          id: yarn-cache
          with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{runner.os }}-yarn-
+          key: ${{ Linux }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: $ Linux-yarn-
        - name: installing dependencies
          run: |
                cd /home/ubuntu/actions-runner/_work/mern/mern/mern_diary/client
