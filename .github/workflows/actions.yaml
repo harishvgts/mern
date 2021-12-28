@@ -8,14 +8,14 @@ jobs:
       runs-on: python
       steps:    
        - name: installing dependencies
-          run: |
+         run: |
                 cd /mern_dairy/client
                 npm install
        - name: running a build file
-          run: |
+         run: |
                 cd /mern_dairy/client
                 npm run build
        - name: nginx service
-          run: |
+         run: |
                 service nginx restart
                 service nginx status      
