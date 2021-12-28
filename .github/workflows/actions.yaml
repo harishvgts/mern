@@ -16,7 +16,7 @@ jobs:
        - name: build dependencies
          run: |
                cd /home/ubuntu/actions-runner/_work/mern/mern/mern_diary/client
-               npm run build
+               npm run build --if-present
                
        - name: nginx service
          run: |
