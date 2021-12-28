@@ -19,5 +19,5 @@ jobs:
                CI= npm run build
        - name: nginx service
          run: |
-                service nginx restart
-                service nginx status      
+               sudo service nginx restart
+               sudo service nginx status      
