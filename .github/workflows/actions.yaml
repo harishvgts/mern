@@ -9,14 +9,13 @@ jobs:
       steps:
        - uses: actions/checkout@v2
     
-        - name: installing dependencies
-          uses: cd client
+       - name: installing dependencies
+           run: cd client
                 npm install
-
-    -name: running a build file
-     uses: cd client
-           npm run build
-    -name: nginx service
-     uses: |
-            service nginx restart
-            service nginx status      
+       - name: running a build file
+          run: cd client
+               npm run build
+       - name: nginx service
+          run: |
+                service nginx restart
+                service nginx status      
